@@ -7,7 +7,7 @@ module.exports = {
     "Hi there! I'm Christopher Cobb, a full stack web developer based in Birmingham, AL.",
   siteUrl: "http://www.christopher-cobb.com",
   siteLanguage: "en_US",
-  siteIcon: "public/icons/favicon-16x16.png", // Relative to gatsby-config file
+  // siteIcon: "public/icons/favicon-16x16.png", // Relative to gatsby-config file
   seoTitleSuffix: "Christopher Cobb", // SEO title syntax will be e.g. "Imprint - {seoTitleSuffix}"
 
   // -- THEME SETTINGS -----
