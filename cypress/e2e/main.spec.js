@@ -20,19 +20,19 @@ describe("IndexPage", () => {
     cy.findByTestId("animated-heading").should("have.css", "opacity", "1")
   })
 
-  it("references legal pages", () => {
-    cy.findByTestId("footer-links")
-      .should("have.attr", "href")
-      .and("include")
-    cy.findByTestId("footer-links")
-      .findByText(/privacy/i)
-      .should("have.attr", "href")
-      .and("include", "privacy")
-  })
+  // it("references legal pages", () => {
+  //   cy.findByTestId("footer-links")
+  //     .should("have.attr", "href")
+  //     .and("include")
+  //   cy.findByTestId("footer-links")
+  //     .findByText(/privacy/i)
+  //     .should("have.attr", "href")
+  //     .and("include", "privacy")
+  // })
 
-  it("renders other pages", () => {
-    cy.findByTestId("footer-links")
-      .click()
-    cy.findByTestId("heading").should("exist")
-  })
+  // it("renders other pages", () => {
+  //   cy.findByTestId("footer-links")
+  //     .click()
+  //   cy.findByTestId("heading").should("exist")
+  // })
 })
