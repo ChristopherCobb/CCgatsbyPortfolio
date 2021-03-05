@@ -182,6 +182,7 @@ const StyledProject = styled(motion.div)`
       }
     }
   }
+
   .screenshot {
     width: 100%;
     max-width: 25rem;
@@ -339,7 +340,9 @@ const Projects = ({ content }) => {
                     onChange={() => setVisibleProject(frontmatter.position)}
                   >
                     <Img
+                      imgStyle={{ objectFit: "contain" }}
                       className="screenshot"
+                      id="photo"
                       fluid={frontmatter.screenshot.childImageSharp.fluid}
                     />
                   </VisibilitySensor>
