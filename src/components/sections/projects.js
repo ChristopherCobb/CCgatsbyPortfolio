@@ -225,19 +225,19 @@ const Projects = ({ content }) => {
     visible: { opacity: 1, y: 0 },
   }
 
-  // useEffect(() => {
-  //   // mobile and tablet only: set first project as visible in the
-  //   // horizontal slider
-  //   setVisibleProject(1)
-  //   // required for animations: set visibility for all projects to
-  //   // "false" initially
-  //   let initial = {}
-  //   projects.forEach(project => {
-  //     initial[project.node.frontmatter.position] = false
-  //   })
-  //   setOnScreen(initial)
-  //   // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, [])
+  useEffect(() => {
+    // mobile and tablet only: set first project as visible in the
+    // horizontal slider
+    setVisibleProject(1)
+    // required for animations: set visibility for all projects to
+    // "false" initially
+    let initial = {}
+    projects.forEach(project => {
+      initial[project.node.frontmatter.position] = false
+    })
+    setOnScreen(initial)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   // Required for animating the title
   const tRef = useRef()
