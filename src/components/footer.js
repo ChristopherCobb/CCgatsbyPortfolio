@@ -65,9 +65,7 @@ const Footer = () => {
           color={
             darkMode ? darkTheme.colors.primary : lightTheme.colors.background
           }
-        >
-          This site was built using GatsbyJS
-        </div>
+        ></div>
         <div className="footer-links">
           {footerLinks.map(({ name, url }, key) => (
             <StyledLink key={key} to={url} $darkMode={darkMode}>
